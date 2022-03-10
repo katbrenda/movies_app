@@ -13,6 +13,6 @@ Movie.create(title:'Inception', stars: 4.9)
 Movie.create(title:'Harry Potter', stars: 3.9)
 Movie.create(title:'Lighthouse', stars: 3.7)
 
-
+Character.create(name:'Harry Potter', good_bad: 'good' )
 
 
