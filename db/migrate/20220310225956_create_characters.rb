@@ -1,9 +1,9 @@
 class CreateCharacters < ActiveRecord::Migration[7.0]
   def change
     create_table :characters do |t|
-      t.string :actor
-      t.string :side
-      t.string :age
+      t.string :name
+      t.string :good_bad
+      t.belongs_to :movies, null: false, foreign_key: true
 
       t.timestamps
     end
