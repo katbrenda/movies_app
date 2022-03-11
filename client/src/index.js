@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Movies from './pages/Movies';
+import MovieForm from "./pages/MovieForm";
+import About from "./pages/About";
+import Movie from "./pages/Movie";
+import Home from './pages/Home';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route index element={<Home/>}/>
+      <Route path="movies"element={<Movies/>}/>
+      <Route path="movie/:id"element={<Movie/>}/>
+      <Route path="about"element={<About/>}/>
+      <Route path="movies/new"element={<MovieForm/>}/>
+
+        
+      
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

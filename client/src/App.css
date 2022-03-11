@@ -1,3 +1,20 @@
+.border {
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.border .border {
+  border: 3px solid red;
+}
+
+.border .border .border {
+  border: 3px solid green;
+}
+
+.border .border .border .border {
+  border: 3px solid orange
+}
+
 .App {
   text-align: center;
 }
