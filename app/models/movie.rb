@@ -1,3 +1,3 @@
 class Movie < ApplicationRecord
-has_many :
+has_many :characters, dependent: :destroy
 end
